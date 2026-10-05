@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariana Pérez Panizo · Líder administrativa externa</title>
+<meta name="description" content="Portfolio profesional de Mariana Pérez Panizo, líder administrativa externa.">
+<style>
+  :root{
+    --bg:#f8fafb; --card:#ffffff; --text:#1d2433; --muted:#5b6578;
+    --primary:#0f7881; --primary-dark:#0b5c63; --primary-soft:#e7f3f4; --border:#e3eaeb;
+    --accent:#fbc579; --accent-soft:#fff6e8;
+    --radius:14px; --max:1040px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.6;font-size:16px}
+  a{color:var(--primary)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+  /* Navegación */
+  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--border);z-index:10}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-weight:700;color:var(--primary);text-decoration:none;letter-spacing:.5px}
+  nav ul{list-style:none;display:flex;gap:22px}
+  nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+  nav ul a:hover{color:var(--primary)}
+
+  /* Cabecera */
+  header{border-top:4px solid var(--accent);padding:72px 0 56px;background:linear-gradient(180deg,#ffffff 0%,var(--bg) 100%)}
+  header .wrap{display:flex;align-items:center;gap:36px}
+  .avatar{flex:0 0 120px;height:120px;border-radius:50%;background:var(--primary);color:#fff;
+          display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:700;
+          letter-spacing:2px;border:5px solid var(--accent);box-shadow:0 8px 24px rgba(15,120,129,.25)}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+  h1{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15}
+  .role{color:var(--primary);font-weight:600;font-size:1.15rem;margin-top:6px}
+  .tagline{color:var(--muted);font-size:1.1rem;margin-top:14px;max-width:560px}
+  .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
+  .btn-primary{background:var(--primary);color:#fff}
+  .btn-primary:hover{background:var(--primary-dark)}
+  .btn-ghost:hover{background:var(--primary-soft)}
+  .btn-ghost{border:1.5px solid var(--primary);color:var(--primary)}
+
+  /* Secciones */
+  section{padding:56px 0}
+  h2{font-size:1.6rem;margin-bottom:22px;position:relative;padding-bottom:10px}
+  h2::after{content:"";position:absolute;left:0;bottom:0;width:48px;height:3px;background:var(--accent);border-radius:2px}
+  .lead{font-size:1.08rem;max-width:760px}
+  .lead + .lead{margin-top:14px}
+
+  /* Tecnologías */
+  .tags{display:flex;flex-wrap:wrap;gap:10px}
+  .tag{background:var(--primary-soft);color:var(--primary);padding:7px 14px;border-radius:999px;font-size:.92rem;font-weight:600}
+
+  /* Proyectos */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;
+        display:flex;flex-direction:column;gap:14px;box-shadow:0 2px 8px rgba(20,30,50,.04)}
+  .card h3{font-size:1.12rem;line-height:1.35;color:var(--primary)}
+  .card h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:4px}
+  .card p,.card li{font-size:.95rem}
+  .card ul{padding-left:18px}
+  .card li{margin-bottom:4px}
+  .result{background:var(--accent-soft);border-left:4px solid var(--accent);color:var(--primary-dark);padding:10px 12px;border-radius:8px;font-weight:600;font-size:.95rem}
+  .card .tags{gap:6px}
+  .card .tag{font-size:.8rem;padding:4px 10px;background:#f1f4f8;color:var(--text);font-weight:500}
+  .card .link{margin-top:auto;font-size:.88rem;color:var(--muted)}
+
+  /* Contacto */
+  .contact{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center}
+  .contact p{color:var(--muted);margin-bottom:20px}
+  .contact .btns{justify-content:center}
+
+  footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem}
+
+  /* Móvil */
+  @media (max-width:720px){
+    nav ul{display:none}
+    header{padding:44px 0 36px}
+    header .wrap{flex-direction:column;text-align:center;gap:20px}
+    .avatar{flex-basis:auto;width:96px;height:96px;font-size:2rem}
+    .tagline{margin-left:auto;margin-right:auto}
+    .btns{justify-content:center}
+    section{padding:40px 0}
+    .contact{padding:24px 18px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#inicio" class="brand">MP<span style="color:var(--accent)">.</span></a>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#tecnologias">Tecnologías</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="inicio">
+  <div class="wrap">
+    <div class="avatar" aria-hidden="true">MP</div>
+    <div>
+      <h1>Mariana Pérez Panizo</h1>
+      <p class="role">Líder administrativa externa</p>
+      <p class="tagline">Pongo orden en la gestión administrativa y uso la tecnología para que los equipos rindan más.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-ghost" href="#contacto">Contactar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="sobre-mi">
+    <div class="wrap">
+      <h2>Sobre mí</h2>
+      <p class="lead">Mis conocimientos TIC hacen que los equipos administrativos ganen capacidad de trabajo. Entro en la empresa como líder administrativa externa: ordeno los procesos, hago de puente entre la necesidad administrativa y los equipos técnicos, y formo a las personas en el cambio de procedimientos.</p>
+      <p class="lead">Creo que hoy no hace falta "calentar silla" para liderar: lo que importa es que el trabajo salga, a tiempo y en orden.</p>
+    </div>
+  </section>
+
+  <section id="tecnologias">
+    <div class="wrap">
+      <h2>Tecnologías</h2>
+      <div class="tags">
+        <span class="tag">Power BI</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">ERPNext</span>
+        <span class="tag">CRM y ERP a medida</span>
+        <span class="tag">Pipe</span>
+        <span class="tag">Asana</span>
+        <span class="tag">Trello</span>
+        <span class="tag">XML</span>
+        <span class="tag">Inteligencia artificial</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="wrap">
+      <h2>Proyectos</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>Control de plazos y seguimiento en un agente digitalizador del Kit Digital</h3>
+          <div>
+            <h4>El problema</h4>
+            <p>La empresa implantaba proyectos del Kit Digital (desarrollo web e implantación de ERP) y trabajaba a golpe de urgencias, sin control de los plazos. Perdía clientes cuyos plazos se caducaban.</p>
+          </div>
+          <div>
+            <h4>Qué hice</h4>
+            <ul>
+              <li>Reorganicé fechas y plazos con Power BI para no perder la traza.</li>
+              <li>Puse en orden un entorno repartido en Pipe (comercial), Asana (técnicos), Trello (justificaciones) y la información de Red.es.</li>
+              <li>Formé al equipo en el uso de las herramientas y en el cambio de procedimientos.</li>
+            </ul>
+          </div>
+          <p class="result">Dejó de perder clientes por plazos caducados.</p>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">Pipe</span><span class="tag">Asana</span><span class="tag">Trello</span><span class="tag">Red.es</span>
+          </div>
+          <p class="link">Empresa anonimizada · Sin enlace público</p>
+        </article>
+
+        <article class="card">
+          <h3>ERP a medida para una consultora de informes medioambientales</h3>
+          <div>
+            <h4>El problema</h4>
+            <p>Gestionaba los informes en un Excel y asignaba el trabajo con un sistema de copias en Google Sheets. Asignar, facturar y presupuestar le llevaba horas.</p>
+          </div>
+          <div>
+            <h4>Qué hice</h4>
+            <ul>
+              <li>Lideré al equipo de desarrollo que adaptó a medida un ERP de código abierto.</li>
+              <li>Trasladé al equipo técnico lo que la clienta necesitaba y lo más cómodo para la gestión administrativa.</li>
+              <li>Formé a la empresa en el uso del sistema y en el cambio de procedimientos.</li>
+            </ul>
+          </div>
+          <p class="result">Asignar, facturar y presupuestar pasó de horas a un minuto.</p>
+          <div class="tags">
+            <span class="tag">ERPNext</span><span class="tag">Excel</span><span class="tag">Google Sheets</span>
+          </div>
+          <p class="link">Empresa anonimizada · Sin enlace público</p>
+        </article>
+
+        <article class="card">
+          <h3>CRM y ERP para una comercializadora de electricidad</h3>
+          <div>
+            <h4>El problema</h4>
+            <p>La comercializadora necesitaba un cambio en su forma de gestión. Se desarrolló primero un CRM y después un ERP.</p>
+          </div>
+          <div>
+            <h4>Qué hice</h4>
+            <ul>
+              <li>Lideré al equipo de desarrollo (5 desarrolladores) que construyó a medida el CRM y el ERP.</li>
+              <li>Trasladé al equipo técnico lo que la clienta necesitaba y lo más cómodo para la gestión administrativa.</li>
+              <li>Formé a la empresa en el uso del sistema y en el cambio de procedimientos.</li>
+            </ul>
+          </div>
+          <p class="result">Tramitación con XML a golpe de clic.</p>
+          <div class="tags">
+            <span class="tag">Ruby on Rails</span><span class="tag">XML</span>
+          </div>
+          <p class="link">Empresa anonimizada · Sin enlace público</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <div class="contact">
+        <p>¿Tu equipo administrativo necesita orden y más capacidad? Hablemos.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:todo@resuelto.es">todo@resuelto.es</a>
+          <a class="btn btn-ghost" href="https://wa.me/34674165826?text=Hola%20Mariana%2C%20he%20visto%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo." target="_blank" rel="noopener">WhatsApp · 674 165 826</a>
+          <!-- COMPLETAR: pon la URL de tu perfil de LinkedIn en href -->
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/TU-PERFIL" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Mariana Pérez Panizo · Resuelto.es</div>
+</footer>
+
+</body>
+</html>
